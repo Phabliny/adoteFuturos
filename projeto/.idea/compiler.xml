@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jovem" />
+        <module name="instituto" />
+        <module name="gitconfig" />
+        <module name="apoiador" />
+        <module name="log" />
+        <module name="quadro" />
+        <module name="eureka" />
+        <module name="curso" />
+        <module name="user" />
+        <module name="card" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apoiador" target="17" />
+      <module name="card" target="17" />
+      <module name="curso" target="17" />
+      <module name="eureka" target="17" />
+      <module name="gateway" target="17" />
+      <module name="gitconfig" target="17" />
+      <module name="instituto" target="17" />
+      <module name="jovem" target="17" />
+      <module name="log" target="17" />
+      <module name="quadro" target="17" />
+      <module name="user" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apoiador" options="-parameters" />
+      <module name="card" options="-parameters" />
+      <module name="curso" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="gitconfig" options="-parameters" />
+      <module name="instituto" options="-parameters" />
+      <module name="jovem" options="-parameters" />
+      <module name="log" options="-parameters" />
+      <module name="quadro" options="-parameters" />
+      <module name="user" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apoiador/apoiador.iml" filepath="$PROJECT_DIR$/apoiador/apoiador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/card/card.iml" filepath="$PROJECT_DIR$/card/card.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curso/curso.iml" filepath="$PROJECT_DIR$/curso/curso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitconfig/gitconfig.iml" filepath="$PROJECT_DIR$/gitconfig/gitconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/instituto/instituto.iml" filepath="$PROJECT_DIR$/instituto/instituto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jovem/jovem.iml" filepath="$PROJECT_DIR$/jovem/jovem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log/log.iml" filepath="$PROJECT_DIR$/log/log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/projeto.iml" filepath="$PROJECT_DIR$/.idea/projeto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quadro/quadro.iml" filepath="$PROJECT_DIR$/quadro/quadro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
+    </modules>
+  </component>
+</project>

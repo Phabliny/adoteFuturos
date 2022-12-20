@@ -1,0 +1,1071 @@
+{
+	"info": {
+		"_postman_id": "d465e0fd-d2f1-4ae1-b1da-d0f2bf70a833",
+		"name": "ADOTE FUTUROS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23040083"
+	},
+	"item": [
+		{
+			"name": "ADOTE FUTUROS",
+			"item": [
+				{
+					"name": "INSTITUICAO",
+					"item": [
+						{
+							"name": "encontrar todas instituicoes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "encontrar instituicao pelo id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/63a0e28dd2ce816a139bbbfb",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"63a0e28dd2ce816a139bbbfb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "criar instituicao",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"IFTM\",\r\n    \"cnpj\":\"XX.XXX.XXX/0001-XX\",\r\n    \"endereco\": \"Rua emanuel machado, 1596\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "criar curso na instituicao",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Microserviços\",\r\n    \"descricao\": \"Neste curso você irá aprender uma das arquiteturas mais modernas e suas tecnologias.\",\r\n    \"cargaHoraria\": \"60\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/63a109bee230222e7642b20d/adicionar/curso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"63a109bee230222e7642b20d",
+										"adicionar",
+										"curso"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "atualizar instituicao",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"63a109bee230222e7642b20d\",\r\n    \"nome\": \"IFTM\",\r\n    \"cnpj\": \"XX.XXX.XXX/0001-XX\",\r\n    \"endereco\": \"Rua emanuel machado, 159\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "excluir instituicao",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/delete/63a0ed5a3b6f900ebfc888a9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"delete",
+										"63a0ed5a3b6f900ebfc888a9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find all cursos de uma instituicao",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/63a0ed5a3b6f900ebfc888a9/findall/cursos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"63a0ed5a3b6f900ebfc888a9",
+										"findall",
+										"cursos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "atualizar curso",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"63a10cd0792e8848c0f4d4d6\",\r\n    \"nome\": \"Microserviços\",\r\n    \"descricao\": \"Neste curso você irá aprender uma das arquiteturas mais modernas e suas tecnologias.\",\r\n    \"cargaHoraria\": \"80\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/63a109bee230222e7642b20d/update/curso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"63a109bee230222e7642b20d",
+										"update",
+										"curso"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletar curso",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instituto/instituicao/63a109bee230222e7642b20d/deletar/curso/63a10b9f792e8848c0f4d4d5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instituto",
+										"instituicao",
+										"63a109bee230222e7642b20d",
+										"deletar",
+										"curso",
+										"63a10b9f792e8848c0f4d4d5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "APOIADOR",
+					"item": [
+						{
+							"name": "find all apoiadores",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/apoiador/apoiador",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"apoiador",
+										"apoiador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find apoiador pelo id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/apoiador/apoiador/63a0f84bafd27004c151d9bd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"apoiador",
+										"apoiador",
+										"63a0f84bafd27004c151d9bd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "criar apoiador",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\":\"luiz\",\r\n    \"cpf\":\"32165498754\",\r\n    \"telefone\": \"34656598989\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/apoiador/apoiador",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"apoiador",
+										"apoiador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "atualizar apoiador",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"63a0f84bafd27004c151d9bd\",\r\n    \"nome\": \"luiz\",\r\n    \"telefone\": \"34656598977\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/apoiador/apoiador/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"apoiador",
+										"apoiador",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletar apoiador",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/apoiador/apoiador/delete/63a0f647afd27004c151d9bc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"apoiador",
+										"apoiador",
+										"delete",
+										"63a0f647afd27004c151d9bc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "apoiar jovem",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"63a11a59f664771138522458\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/apoiador/apoiador/apoiar/jovem/63a0ed5a3b6f900ebfc888a9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"apoiador",
+										"apoiador",
+										"apoiar",
+										"jovem",
+										"63a0ed5a3b6f900ebfc888a9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "JOVEM",
+					"item": [
+						{
+							"name": "find all jovens",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/jovem/jovem",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jovem",
+										"jovem"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find jovem pelo id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/jovem/jovem/63a0fcf6430cd06a6ad037c8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jovem",
+										"jovem",
+										"63a0fcf6430cd06a6ad037c8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "criar jovem",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"luiza\",\r\n    \"dataNasc\": \"12/10/2000\",\r\n    \"genero\": \"feminino\",\r\n    \"descricao\": \"procuro curso de microserviços, Camillo me salvaaaaaa, fiz com amor esse trabalho e dei tudo de mim!\",\r\n    \"apoiado\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/jovem/jovem/instituicao/63a109bee230222e7642b20d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jovem",
+										"jovem",
+										"instituicao",
+										"63a109bee230222e7642b20d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "atualizar jovem",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"63a0fd34430cd06a6ad037c9\",\r\n    \"nome\": \"luiza\",\r\n    \"dataNasc\": \"12/10/2000\",\r\n    \"genero\": \"feminino\",\r\n    \"descricao\": \"procuro curso de microserviços, Camillo me salvaaaaaa, fiz com amor esse trabalho e dei tudo de mim!\",\r\n    \"apoiado\": true,\r\n    \"apoiador\": {\r\n        \"id\":\"63a0f84bafd27004c151d9bd\"\r\n    },\r\n    \"curso\": {\r\n        \"id\":\"63a0ed5a3b6f900ebfc888a9\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/jovem/jovem/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jovem",
+										"jovem",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletar jovem",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/jovem/jovem/delete/63a0fcf6430cd06a6ad037c8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jovem",
+										"jovem",
+										"delete",
+										"63a0fcf6430cd06a6ad037c8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GIT REPO",
+					"item": [
+						{
+							"name": "EUREKA",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/eureka/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"eureka",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8761/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8761",
+											"path": [
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "GATEWAY",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/gateway/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"gateway",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/gateway/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"gateway",
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "INSTITUICAO",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/instituto/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"instituto",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/instituto/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"instituto",
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "JOVEM",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/jovem/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"jovem",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/jovem/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jovem",
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "LOG",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/log/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"log",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/log/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"log",
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "APOIADOR",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/apoiador/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"apoiador",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/apoiador/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"apoiador",
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CURSO",
+							"item": [
+								{
+									"name": "GET CONFIGS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8888/curso/default",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"curso",
+												"default"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "REFHRESH CONFIGS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/curso/actuator/refresh",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"curso",
+												"actuator",
+												"refresh"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "LOG",
+					"item": [
+						{
+							"name": "find all logs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/log/log",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"log",
+										"log"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find log by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/log/log/63a0ed5a5783d75cff3a2e24",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"log",
+										"log",
+										"63a0ed5a5783d75cff3a2e24"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find log by action",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/log/log/action/ADD",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"log",
+										"log",
+										"action",
+										"ADD"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find by jovem nome",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/log/log/jovem/matheus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"log",
+										"log",
+										"jovem",
+										"matheus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find by data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/log/log/data/2022-12-19T23:01:46.685+00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"log",
+										"log",
+										"data",
+										"2022-12-19T23:01:46.685+00:00"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find by apoiador nome",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/log/log/apoiador/luiz",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"log",
+										"log",
+										"apoiador",
+										"luiz"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CURSO",
+					"item": [
+						{
+							"name": "get all cursos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/curso/curso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"curso",
+										"curso"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get curso by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/curso/curso/63a0ed5a3b6f900ebfc888a9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"curso",
+										"curso",
+										"63a0ed5a3b6f900ebfc888a9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
